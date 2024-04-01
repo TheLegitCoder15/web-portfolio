@@ -8,3 +8,9 @@
 body {
   margin: 0;
 }
+
+header {
+  display: grid !important;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}

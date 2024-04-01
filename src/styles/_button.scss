@@ -5,7 +5,7 @@
   @include color-theme();
   @include body-font($font-size: $default-medium, $font-weight: medium);
   @include flex-container();
-  padding: $default-medium-padding $default-small-padding;
+  padding: $default-small-padding $default-medium-padding;
   border-radius: 50px;
   gap: 10px;
 
