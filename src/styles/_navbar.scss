@@ -1,0 +1,18 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.nav-item {
+  @include flex-container();
+  @include title-font($font-size: $default-medium);
+  color: $white;
+  text-decoration: none;
+  gap: 10px;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.nav-item-container {
+  @include flex-container();
+  gap: 10px;
+}
