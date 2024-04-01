@@ -1,0 +1,20 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.btn {
+  @include color-theme();
+  @include body-font($font-size: $default-medium, $font-weight: medium);
+  @include flex-container();
+  padding: $default-medium-padding $default-small-padding;
+  border-radius: 50px;
+  gap: 10px;
+
+  &:hover,
+  &:active {
+    @include color-theme($background-color: $primary-color, $color: $white);
+  }
+  &:active {
+    box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
+}

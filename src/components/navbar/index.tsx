@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 import "../../styles/_navbar.scss";
+import Button from "../button";
+import { BsTelephone } from "react-icons/bs";
 
 type NavbarProps = {
   navitems: string[];
@@ -22,7 +24,9 @@ function Navbar({ navitems, navicons }: NavbarProps) {
             </a>
           ))}
       </div>
-      <div className="button-item-container"></div>
+      <div className="button-item-container">
+        <Button text="Contact Me" icon={<BsTelephone size={24} />} />
+      </div>
     </nav>
   );
 }

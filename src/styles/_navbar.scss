@@ -1,9 +1,13 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
+.navbar {
+  @include flex-container();
+}
+
 .nav-item {
   @include flex-container();
-  @include title-font($font-size: $default-medium);
+  @include title-font($font-size: $default-medium, $font-weight: normal);
   color: $white;
   text-decoration: none;
   gap: 10px;
