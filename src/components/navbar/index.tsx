@@ -20,7 +20,7 @@ function Navbar({ navitems, navicons }: NavbarProps) {
               href={`/${navitems[index].toLowerCase()}`}
             >
               {iconElement}
-              <text>{navitems[index]}</text>
+              <span>{navitems[index]}</span>
             </a>
           ))}
       </div>
