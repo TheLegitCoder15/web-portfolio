@@ -1,3 +1,4 @@
+import Banner from "./components/banner";
 import Navbar from "./components/navbar";
 import { BsHouse, BsPerson, BsBriefcase } from "react-icons/bs";
 
@@ -14,6 +15,9 @@ function App() {
           ]}
         />
       </header>
+      <div className="content">
+        <Banner />
+      </div>
     </>
   );
 }
